@@ -2,14 +2,18 @@
     margin: 0;
     padding: 0;
     font-family:sans-serif;
+    scroll-behavior: smooth;
 }
+body{
+        background-color:#081b29;
+    }
 .nav{
     display: flex;
     justify-content: space-between;
     background-color: #081b29;
     color: white;
     height: 10vh;
-    width: 100vw;
+    width: 95vw;
     align-items: center;
     position: fixed;
 
@@ -29,14 +33,14 @@
     
 }
 @keyframes colour {
-    0%{color:yellowgreen ;}
-    12%{color:rgb(35, 239, 35);}
+    0%{color:rgb(211, 114, 114) ;}
+    12%{color:rgb(158, 62, 62);}
     24%{color: white;}
     40%{color: skyblue;}
-    50%{color: rgb(71, 71, 196);}
-    80%{color: wheat;}
-      90%{color: orange;}
-    100%{color: yellow;}
+    50%{color: rgb(7, 7, 244);}
+    80%{color: rgb(179, 245, 235);}
+      90%{color: rgb(220, 231, 104);}
+    100%{color: rgb(222, 151, 18);}
     
 }
 .name{
@@ -56,7 +60,7 @@
 }
 #ul li{
     list-style-type: none;
-    margin: 40px;
+    margin: 50px;
     cursor: pointer;
     font-size: large;
 }
@@ -69,7 +73,6 @@ a{
     color: white;
 }
 
-/* header ends header  */
  .intro{
     display: flex;
     align-items: center;
@@ -81,7 +84,9 @@ a{
  }.bio{
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     padding: 40px;
+    padding: 20px 10%;
     height: 70vh;
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -103,6 +108,7 @@ a{
     border-radius: 50%;
     height: 28vw;
     margin-bottom: 10%;
+    margin-right: 7%;
     width: 28vw;}
     button{
         width: 200px;
@@ -112,11 +118,12 @@ a{
         background-color:green;
         color: white;
         font-size: large;
-        border: 4px solid black;
-    cursor: pointer;}
+        border: 2px solid whitesmoke;
+           cursor: pointer;}
     button:hover{
         background-color: rgb(205, 43, 43);
         color: black;
+    
     }.icons{
         display: flex;
         width: 15vw;
@@ -125,56 +132,146 @@ a{
     .icon{
         height: 50px;
         width:  50px;
+        cursor: pointer;
         border-radius: 50%;
         border: 3px solid yellowgreen;
     }
 .icon:hover{
-    border: 6px solid red;
+     border:4px solid rgb(8, 147, 240);
 }
 
-/* about section starts here  */
-.about{
-    height: 100vh;
+#about{
+    height: auto;
     background-color:#081b29;
-
+    display: flex;
+    padding: 50px;
+    margin: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}#abt,#propara,#skillp,#langp{
+    text-align: center;
+    color: whitesmoke;
+    font-size: xx-large;
+    padding: 30px;
+    margin-top: 40px;
+    text-decoration: underline;
+}.abt img{
+    height: 55vh;
+    border: 10px dashed rgb(54, 163, 252);
+    border-radius: 50%;
+    width:  55vh;
+    margin: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.skills{
-    padding: 20px;
+.abt{
+    background-color: whitesmoke;
+    width: auto;
+    border-radius: 20px;
+    height: auto;
+    margin:5vh;
+    /* padding: 10vh; */
+    display: flex;
+    align-items: center;
+    border: 8px solid  rgb(8, 147, 240);
+    justify-content: space-around;
+}
+#projects{
+    text-align: center;
+    background: linear-gradient(to right, red , blue);
+    margin: 5vh;
+    border-radius: 15px;
+    border: 8px solid whitesmoke;
+    font-size: xx-large;
+    padding: 30px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+#projects img{
+    height: 45vh;
     margin: 30px;
+    width: 45vh;
+    border-radius: 15px;
+    border: 3px solid red;
+    border-radius: 50%;
+    background-color: #fff;}
+    .pro{
+        width: 99%;
+        display: grid;
+        padding: 5px;
+        padding: 20px;
+        grid-template-columns: repeat(3,28vw);
+    }
+    .pro p{
+        font-family: monospace;
+        background-color:rgb(8, 147, 240);
+        color: whitesmoke;
+        border-radius: 15px;
+        padding: 8px;
+        margin: 10px;}
+
+        #skill{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #skill img{
+            height: 50vh;
+            width: 40vh;
+            margin: 20px;
+            background-color: whitesmoke;
+            border: 4px solid rgb(8, 147, 240);
+            border-radius: 15px;
+        }
+        #skill p{
+            background-color: rgb(88, 191, 246);
+            font-size: larger;
+            color: black;
+            font-family:sans-serif;
+            padding: 20px;
+            text-align: center;
+            margin: 20px;
+            border-radius: 10px;
+
+        }
+
+        .lang{
+            margin-top: 10vh;
+            margin-left: 5%;
+            display: grid;
+            padding: 20px;
+            grid-template-columns: repeat(4,24vw);
+        }
+        .lang img{
+            height: 20vh;
+            width: 20vh;
+            margin: 30px 15px;
+            border-radius: 50%;
+            background-color: white;
+            border: 3px solid rgb(8, 147, 240);            ;
+        }
+        .lang p{
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(44, 192, 250);
+            width: 13vw;
+            text-align: center;
+            font-size: large;
+        }
+
+#summary{
+    width:auto;
+    padding: 20px;
+    margin: 25px;
     background-color: rgb(8, 147, 240);
     color: whitesmoke;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: large;
     border: 4px double rgb(60, 54, 54);
     border-radius: 14px;
-    align-items: center;}
- #skillpara{
-    background-color:rgb(222, 127, 19);
-    color: black;
-    padding: 15px;
-    text-align: center;
-    margin-top: 50px;
-    border-radius: 20px;
-    display: inline;
-
 }
 li:hover{
     color: rgb(51, 51, 178);
@@ -184,36 +281,7 @@ li:hover{
     font-family:serif;
     cursor: pointer;
 }
-/* bio section ends here  */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.contact p{
-    padding: 10px;
-    text-align: center;
-    background-color:black;
-    color: greenyellow;
-    font-size:medium;
-}
 footer{
     text-align:center;
     background-color: rgb(54, 53, 53);
