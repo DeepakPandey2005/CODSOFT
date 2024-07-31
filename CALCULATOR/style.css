@@ -5,9 +5,10 @@
 }
 #owner{
     text-align: center;
-    background-color: greenyellow;
+    background: linear-gradient(to right, red ,blue );
+
     font-size: larger;
-    color: black;
+    color: whitesmoke;
     display:none;
 }
 .container{

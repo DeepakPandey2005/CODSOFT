@@ -32,4 +32,4 @@ notch.addEventListener('click',()=>{
     },3000);
    
 })
-// autohr -deepak 
+// author - @Deepak

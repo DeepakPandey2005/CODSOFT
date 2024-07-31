@@ -1,13 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family:sans-serif;
+    font-family: sans-serif;
     scroll-behavior: smooth;
 }
-body{
-        background-color:#081b29;
-    }
-.nav{
+
+body {
+    background-color: #081b29;
+}
+
+.nav {
     display: flex;
     justify-content: space-between;
     background-color: #081b29;
@@ -18,70 +20,108 @@ body{
     position: fixed;
 
 }
-#vector{
+
+#vector {
     height: 82px;
     position: fixed;
     top: 12px;
     left: -23px;
     z-index: 0;
     width: 150px;
-    animation: rotate 8s infinite  linear ;
+    animation: rotate 8s infinite linear;
 }
+
 @keyframes rotate {
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
-    
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
 }
+
 @keyframes colour {
-    0%{color:rgb(211, 114, 114) ;}
-    12%{color:rgb(158, 62, 62);}
-    24%{color: white;}
-    40%{color: skyblue;}
-    50%{color: rgb(7, 7, 244);}
-    80%{color: rgb(179, 245, 235);}
-      90%{color: rgb(220, 231, 104);}
-    100%{color: rgb(222, 151, 18);}
-    
+    0% {
+        color: rgb(211, 114, 114);
+    }
+
+    12% {
+        color: rgb(158, 62, 62);
+    }
+
+    24% {
+        color: white;
+    }
+
+    40% {
+        color: skyblue;
+    }
+
+    50% {
+        color: rgb(7, 7, 244);
+    }
+
+    80% {
+        color: rgb(179, 245, 235);
+    }
+
+    90% {
+        color: rgb(220, 231, 104);
+    }
+
+    100% {
+        color: rgb(222, 151, 18);
+    }
+
 }
-.name{
-  font-size: xx-large;
-  margin-top: 30px;
-  margin-left: 40px;
-  position: relative;
-  z-index:1;
-  color:rgb(20, 249, 20);
-  font-family:cursive;
-  animation: colour 8s infinite  linear ;
+
+.name {
+    font-size: xx-large;
+    margin-top: 30px;
+    margin-left: 40px;
+    position: relative;
+    z-index: 1;
+    color: rgb(20, 249, 20);
+    font-family: cursive;
+    animation: colour 8s infinite linear;
 
 
 }
-#ul{
+
+#ul {
     display: flex;
 }
-#ul li{
+
+#ul li {
     list-style-type: none;
     margin: 50px;
     cursor: pointer;
     font-size: large;
 }
-a:hover{
+
+a:hover {
     color: rgb(8, 147, 240);
     text-decoration: underline;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
 
- .intro{
+.intro {
     display: flex;
     align-items: center;
     padding: 20px;
     padding-top: 20vh;
     justify-content: space-around;
-    background-color:#081b29;
+    background-color: #081b29;
     color: white;
- }.bio{
+}
+
+.bio {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -91,93 +131,112 @@ a{
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
- }
- span{
+}
+
+span {
     font-size: larger;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(8, 147, 240);
     padding: 20px;
- }
-.me{
+}
+
+.me {
     font-size: 2rem;
     padding: 20px;
 }
 
- #image {
-    animation: colour 8s infinite  linear ;
+#image {
+    animation: colour 8s infinite linear;
     border-radius: 50%;
     height: 28vw;
     margin-bottom: 10%;
     margin-right: 7%;
-    width: 28vw;}
-    button{
-        width: 200px;
-        padding: 15px;
-        margin: 50px;
-        border-radius: 15px;
-        background-color:green;
-        color: white;
-        font-size: large;
-        border: 2px solid whitesmoke;
-           cursor: pointer;}
-    button:hover{
-        background-color: rgb(205, 43, 43);
-        color: black;
-    
-    }.icons{
-        display: flex;
-        width: 15vw;
-        justify-content: space-between;
-    }
-    .icon{
-        height: 50px;
-        width:  50px;
-        cursor: pointer;
-        border-radius: 50%;
-        border: 3px solid yellowgreen;
-    }
-.icon:hover{
-     border:4px solid rgb(8, 147, 240);
+    width: 28vw;
 }
 
-#about{
+button {
+    width: 200px;
+    padding: 15px;
+    margin: 50px;
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+    font-size: large;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(205, 43, 43);
+    color: black;
+
+}
+
+.icons {
+    display: flex;
+    width: 15vw;
+    justify-content: space-between;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid yellowgreen;
+}
+
+.icon:hover {
+    border: 4px solid rgb(8, 147, 240);
+}
+
+#about {
     height: auto;
-    background-color:#081b29;
+    background-color: #081b29;
     display: flex;
     padding: 50px;
     margin: 50px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}#abt,#propara,#skillp,#langp{
+}
+
+#abt,
+#propara,
+#skillp,
+#langp {
     text-align: center;
     color: whitesmoke;
     font-size: xx-large;
     padding: 30px;
     margin-top: 40px;
     text-decoration: underline;
-}.abt img{
+}
+
+.abt img {
     height: 55vh;
     border: 10px dashed rgb(54, 163, 252);
     border-radius: 50%;
-    width:  55vh;
+    width: 55vh;
     margin: 40px;
 }
-.abt{
+
+.abt {
     background-color: whitesmoke;
     width: auto;
     border-radius: 20px;
     height: auto;
-    margin:5vh;
+    margin: 5vh;
     /* padding: 10vh; */
     display: flex;
     align-items: center;
-    border: 8px solid  rgb(8, 147, 240);
+    border: 8px solid rgb(8, 147, 240);
     justify-content: space-around;
 }
-#projects{
+
+#projects {
     text-align: center;
-    background: linear-gradient(to right, red , blue);
+    background: linear-gradient(to right, red, blue);
     margin: 5vh;
     border-radius: 15px;
     border: 8px solid whitesmoke;
@@ -187,81 +246,91 @@ a{
     display: flex;
     align-items: center;
 }
-#projects img{
+
+#projects img {
     height: 45vh;
     margin: 30px;
     width: 45vh;
     border-radius: 15px;
     border: 3px solid red;
     border-radius: 50%;
-    background-color: #fff;}
-    .pro{
-        width: 99%;
-        display: grid;
-        padding: 5px;
-        padding: 20px;
-        grid-template-columns: repeat(3,28vw);
-    }
-    .pro p{
-        font-family: monospace;
-        background-color:rgb(8, 147, 240);
-        color: whitesmoke;
-        border-radius: 15px;
-        padding: 8px;
-        margin: 10px;}
+    background-color: #fff;
+}
 
-        #skill{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
-        #skill img{
-            height: 50vh;
-            width: 40vh;
-            margin: 20px;
-            background-color: whitesmoke;
-            border: 4px solid rgb(8, 147, 240);
-            border-radius: 15px;
-        }
-        #skill p{
-            background-color: rgb(88, 191, 246);
-            font-size: larger;
-            color: black;
-            font-family:sans-serif;
-            padding: 20px;
-            text-align: center;
-            margin: 20px;
-            border-radius: 10px;
+.pro {
+    width: 99%;
+    display: grid;
+    padding: 5px;
+    padding: 20px;
+    grid-template-columns: repeat(3, 28vw);
+}
 
-        }
+.pro p {
+    font-family: monospace;
+    background-color: rgb(8, 147, 240);
+    color: whitesmoke;
+    border-radius: 15px;
+    padding: 8px;
+    margin: 10px;
+}
 
-        .lang{
-            margin-top: 10vh;
-            margin-left: 5%;
-            display: grid;
-            padding: 20px;
-            grid-template-columns: repeat(4,24vw);
-        }
-        .lang img{
-            height: 20vh;
-            width: 20vh;
-            margin: 30px 15px;
-            border-radius: 50%;
-            background-color: white;
-            border: 3px solid rgb(8, 147, 240);            ;
-        }
-        .lang p{
-            color: black;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: rgb(44, 192, 250);
-            width: 13vw;
-            text-align: center;
-            font-size: large;
-        }
+#skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
-#summary{
-    width:auto;
+#skill img {
+    height: 50vh;
+    width: 40vh;
+    margin: 20px;
+    background-color: whitesmoke;
+    border: 4px solid rgb(8, 147, 240);
+    border-radius: 15px;
+}
+
+#skill p {
+    background-color: rgb(88, 191, 246);
+    font-size: larger;
+    color: black;
+    font-family: sans-serif;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+
+.lang {
+    margin-top: 10vh;
+    margin-left: 5%;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(4, 24vw);
+}
+
+.lang img {
+    height: 20vh;
+    width: 20vh;
+    margin: 30px 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid rgb(8, 147, 240);
+    ;
+}
+
+.lang p {
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(44, 192, 250);
+    width: 13vw;
+    text-align: center;
+    font-size: large;
+}
+
+#summary {
+    width: auto;
     padding: 20px;
     margin: 25px;
     background-color: rgb(8, 147, 240);
@@ -273,22 +342,29 @@ a{
     border: 4px double rgb(60, 54, 54);
     border-radius: 14px;
 }
-li:hover{
+
+li:hover {
     color: rgb(51, 51, 178);
-} details , summary,li{
+}
+
+details,
+summary,
+li {
     margin: 5px;
     font-size: medium;
-    font-family:serif;
+    font-family: serif;
     cursor: pointer;
 }
 
-footer{
-    text-align:center;
+footer {
+    text-align: center;
     background-color: rgb(54, 53, 53);
     padding: 40px;
     border: 3px solid green;
 
 }
-footer a{
+
+footer a {
     cursor: pointer;
-    font-size:medium;}
+    font-size: larger;
+}

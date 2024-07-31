@@ -65,21 +65,45 @@ main{
     border-radius:15px;
     outline: none;
     font-size: large;
-    margin-top: 15%;
+    margin-top: 10%;
     text-align: center;
     padding: 15px;
     border: 2px solid rgb(60, 59, 59);
 }
 #offer{
-    width: 40vw;
+    width: 35vw;
     border: 3px solid green;
     border-radius: 20px;
-    margin: 50px;
+    margin: 40px;
+}.booking-head{
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    padding: 5px;
 }
-.booking{
+#travel-mode,#date{
+    margin: 20px;
+    width: 25vw;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid black;
+    color: black;
+    outline:none;
+    font-size: larger;
+    border-radius: 12px;
+}
+
+.booking-container{
+    padding: 10px;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
     background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(2px);
-    border: 3px solid rgb(180, 187, 216);
+    border: 5px double chocolate;
+    backdrop-filter: blur(5px);
+}
+.booking-box{
     padding: 10px;
     height: 8vh;
     width:  70vh;
@@ -88,12 +112,13 @@ main{
     border-radius: 20px;
     align-items: center;
 }
-.booking select{
+.booking-box select{
     height: 25px;
     width:  200px;
-    background-color: rgb(201, 201, 222);
+    cursor: pointer;
+     background-color:aliceblue;
+    text-align: center;
     padding: 2px;
-    border: 2px solid rgb(128, 128, 128);
     border-radius: 8px;
     font-size: medium;
 }
